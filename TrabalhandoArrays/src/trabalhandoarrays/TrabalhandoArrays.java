@@ -82,29 +82,30 @@ public class TrabalhandoArrays {
         Integer maior = numbers.get(0);
         
         // FOR UTILIZANDO BUBBLE PARA LOCALIZAR O NUMERO MENOR
-        
+        /*
         for (int i = 1; i < numbers.size(); i++) {
             if(numbers.get(i) < menor){
                 menor = numbers.get(i);
             }
         }
-         
+        */ 
         
-        //menor(numbers);
+        menor(numbers);
+        int resultadoMenor = menor(numbers);
         
         // FOR UTILIZANDO BUBBLE PARA LOCALIZAR O NUMERO MAIOR
-        
+        /*
         for (int i = 1; i < numbers.size(); i++) {
             if (numbers.get(i) > maior){
                 maior = numbers.get(i);
             }
         }    
+        */
         
-        
-        //maior(numbers);
-        
+        maior(numbers);
+        int resultadoMaior = maior(numbers);
         // MEDIA SOMANDO TODOS OS NUMEROS DA LISTA E OS DIVIDINDO PELO PRÓPRIO TAMANHO
-        
+        /*
             Double media = 0.0;
             Iterator<Integer> it = numbers.iterator();
             
@@ -113,15 +114,15 @@ public class TrabalhandoArrays {
             }
             
             media /= numbers.size();
-          
+        */  
         
-        //media(numbers);
-        /*    
+        media(numbers);
+        Double resultadoMedia = media(numbers);    
             JOptionPane.showMessageDialog(null, "Dos números inteiros digitados\n"+
                                                 "O menor número é: "+menor+"\n"+
                                                 "O maior número é: "+maior+"\n"+
-                                                "E a média dos números é: "+media);
-        */    
+                                                "E a média dos números é: "+resultadoMedia+"";
+            
     }
         
     
@@ -129,7 +130,7 @@ public class TrabalhandoArrays {
 
     public static void maior(ArrayList<Integer> numbers){
         
-        Integer maior = numbers.get(0);
+        int maior = numbers.get(0);
         
         // FOR UTILIZANDO BUBBLE PARA LOCALIZAR O NUMERO MENOR
         for (int i = 1; i < numbers.size(); i++) {
@@ -142,7 +143,7 @@ public class TrabalhandoArrays {
     
     public static void menor(ArrayList<Integer> numbers){
         
-         Integer menor = numbers.get(0);
+         int menor = numbers.get(0);
         
         // FOR UTILIZANDO BUBBLE PARA LOCALIZAR O NUMERO MENOR
         for (int i = 1; i < numbers.size(); i++) {
@@ -155,14 +156,14 @@ public class TrabalhandoArrays {
     
     public static void media(ArrayList<Integer> numbers) {
     
-        Double media = 0.0;
+        Double media1 = 0.0;
             Iterator<Integer> it = numbers.iterator();
             
             while(it.hasNext()){
-                media += it.next();
+                media1 += it.next();
             }
             
-            media /= numbers.size();
+            media1 /= numbers.size();
     }
     /*
     public static void pedirVariasNotas(){
